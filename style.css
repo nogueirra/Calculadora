@@ -1,0 +1,17 @@
+input{
+    font:normal 18pt Arial;
+    width: 200px;
+}
+
+div#result{
+    font:normal 18pt Arial;
+    margin-top: 10px;
+}
+
+div#action{
+    background-color: blue;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
