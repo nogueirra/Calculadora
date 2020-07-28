@@ -1,37 +1,26 @@
     
     
-var actionButton = document.querySelector('input#action')
-var selectButton = document.querySelector('select#operation')
+const actionButton = document.querySelector('input#action')
+const selectButton = document.querySelector('select#operation')
     
 //Listener
 actionButton.addEventListener('click',operationFunc)
 
-    //Operações
+//Operações
 function operationFunc()
 {
-    var num1 = Number(document.querySelector('input#input1').value)
-    var num2 = Number(document.querySelector('input#input2').value)
-    var result;
+    const num1 = Number(document.querySelector('input#input1').value)
+    const num2 = Number(document.querySelector('input#input2').value)
+    var result
 
-    const operations = {
-        addition()
-        {
-            result = num1 + num2
-        },
-        subtraction()
-        {
-            result = num1 - num2;
-        }
-    }
-
-    switch(selectButton.value)  //Checar qual opcao esta selecionada
+    switch(selectButton.value)  //Checar a opção selecionada e mudar o valor do resultado
     {
         case 'addition':
-            operations.addition()
+            result = num1 + num2;
         break
             
         case 'subtraction':
-            operations.subtraction()
+            result = num1 - num2;
         break
     }
 
