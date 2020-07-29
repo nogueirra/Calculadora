@@ -1,14 +1,14 @@
-    
-    
 const actionButton = document.querySelector('input#action')
 const selectButton = document.querySelector('select#operation')
     
 //Listener
-actionButton.addEventListener('click',operationFunc)
+actionButton.addEventListener('click',operationFunc())
+selectButton.addEventListener('selectionchange',updatePage())
 
 //Operações
 function operationFunc()
 {
+    updatePage()
     const num1 = Number(document.querySelector('input#input1').value)
     const num2 = Number(document.querySelector('input#input2').value)
     var result
@@ -24,9 +24,9 @@ function operationFunc()
         break
     }
 
-    document.querySelector('div#result').innerHTML = `Result: ${result}`
+    document.querySelector('div#result').innerHTML = `Result: ${result}` //Colocar o resultado na tela
     console.log(`A operação ${selectButton.value} entre ${num1} e ${num2} teve um resultado de  ${result}`)
-    }
+}
 
 function updatePage()
 {
