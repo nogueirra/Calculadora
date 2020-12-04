@@ -6,8 +6,7 @@
   "author": "Davi-Nogueira",
   "license": "MIT",
   "scripts": {
-    "open": "explorer http://localhost:3000",
-    "dev": "nodemon src/server.ts & ",
+    "dev": "nodemon src/server.ts",
     "prod": "node dist/server.js",
     "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
