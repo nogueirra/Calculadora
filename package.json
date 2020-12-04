@@ -1,0 +1,23 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Davi-Nogueira/Calculadora.git",
+  "author": "Davi-Nogueira",
+  "license": "MIT",
+  "scripts": {
+    "open": "explorer http://localhost:3000",
+    "dev": "nodemon src/server.ts & ",
+    "prod": "node dist/server.js",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "nodemon": "^2.0.5",
+    "sucrase": "^3.16.0"
+  }
+}
