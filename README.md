@@ -6,4 +6,6 @@ Acessível no seguinte [site](https://davi-nogueira.github.io/Calculadora/).
 
 # Tecnologias usadas
 
-- [Express](https://express)
+- [Express](https://www.npmjs.com/package/express)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
+- [Sucrase](https://www.npmjs.com/package/sucrase)

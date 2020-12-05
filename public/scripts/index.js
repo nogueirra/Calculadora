@@ -1,7 +1,7 @@
 //Listener
-// document.querySelector('#action').addEventListener('click', operationFunc())
+document.querySelector('#action').addEventListener('click', operationFunc)
 document.querySelector('#operation').onclick = updatePage
-document.querySelector('#action').onclick = operationFunc
+// document.querySelector('#action').onclick = operationFunc
 // selectButton.addEventListener('selectionchange', updatePage())
 
 //Operações
