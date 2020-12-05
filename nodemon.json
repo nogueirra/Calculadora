@@ -2,6 +2,6 @@
     "watch": ["src", "nodemon.json"],
     "ext": "js, ts",
     "execMap": {
-        "ts": "sucrase-node"
+        "js": "sucrase-node"
     }
 }

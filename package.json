@@ -7,9 +7,7 @@
   "license": "MIT",
   "scripts": {
     "open": "explorer http://localhost:3000",
-    "dev": "nodemon src/server.ts & ",
-    "prod": "node dist/server.js",
-    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
